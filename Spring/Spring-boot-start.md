@@ -228,9 +228,11 @@ public class Board {
 	@Column(name="content")
 	private String content;
 
+	@CreationTimestamp
 	@Column(name="created_time")
 	private LocalDateTime created_time;
 
+	@UpdateTimestamp	
 	@Column(name="updated_time")
 	private LocalDateTime updated_time;
 
