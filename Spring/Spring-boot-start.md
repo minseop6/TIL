@@ -232,7 +232,7 @@ public class Board {
 	@Column(name="created_time")
 	private LocalDateTime created_time;
 
-	@UpdateTimestamp	
+	@UpdateTimestamp
 	@Column(name="updated_time")
 	private LocalDateTime updated_time;
 
@@ -395,3 +395,250 @@ public class BoardController {
 ```
 
 ![MySQL1](../img/Spring/Spring-boot-start/MySQL1.png)
+
+----------
+## CRUD
+
+### 1. Create
+BoardService.java
+```java
+package com.ms.study.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ms.study.domain.Board;
+import com.ms.study.repository.BoardRepository;
+
+@Service
+public class BoardService {
+
+	@Autowired
+	BoardRepository boardRepo;
+
+	public List<Board> findAll() {
+
+		List<Board> list = boardRepo.findAll();
+
+		return list;
+	}
+
+	public void create(Board board) {
+		boardRepo.save(board);
+	}
+}
+```
+
+BoardController.java
+```java
+package com.ms.study.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ms.study.domain.Board;
+import com.ms.study.service.BoardService;
+
+@Controller
+public class BoardController {
+
+	@Autowired
+	BoardService service;
+
+	@GetMapping("/board")
+	public ModelAndView boardList() {
+
+		List<Board> list = service.findAll();
+		ModelAndView nextView = new ModelAndView("list");
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/create")
+	public ModelAndView boardCreate() {
+
+		ModelAndView nextView = new ModelAndView("create");
+
+		return nextView;
+	}
+
+	@PostMapping("/board/create")
+	public ModelAndView boardCreate(Board board) {
+		System.out.println(board);
+		service.create(board);
+		ModelAndView nextView = new ModelAndView("list");
+		List<Board> list = service.findAll();
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+}
+```
+
+create.jsp
+```html
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/board/create" method="POST">
+		<label>TITLE</label>
+		<input type="text" name="title" /><br>
+		<label>WRITER</label>
+		<input type="text" name="writer" /><br>
+		<label>CONTENT</label>
+		<textarea name="content"></textarea><br>
+		<button type="submit">CREATE</button>
+	</form>
+</body>
+</html>
+```
+
+### 2. Read
+BoardService.java
+```java
+package com.ms.study.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ms.study.domain.Board;
+import com.ms.study.repository.BoardRepository;
+
+@Service
+public class BoardService {
+
+	@Autowired
+	BoardRepository boardRepo;
+
+	public List<Board> findAll() {
+
+		List<Board> list = boardRepo.findAll();
+
+		return list;
+	}
+
+	public void create(Board board) {
+		boardRepo.save(board);
+	}
+
+	public Board detail(int id) {
+
+		Board detail = boardRepo.getOne(id);
+
+		return detail;
+	}
+}
+```
+
+BoardController.java
+```java
+package com.ms.study.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ms.study.domain.Board;
+import com.ms.study.service.BoardService;
+
+@Controller
+public class BoardController {
+
+	@Autowired
+	BoardService service;
+
+	@GetMapping("/board")
+	public ModelAndView boardList() {
+
+		List<Board> list = service.findAll();
+		ModelAndView nextView = new ModelAndView("list");
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/create")
+	public ModelAndView boardCreate() {
+
+		ModelAndView nextView = new ModelAndView("create");
+
+		return nextView;
+	}
+
+	@PostMapping("/board/create")
+	public ModelAndView boardCreate(Board board) {
+
+		service.create(board);
+		ModelAndView nextView = new ModelAndView("list");
+		List<Board> list = service.findAll();
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/{id}")
+	public ModelAndView detail(@PathVariable("id") int id) {
+
+		ModelAndView nextView = new ModelAndView("detail");
+		Board detail = service.detail(id);
+		nextView.addObject("detail", detail);
+
+		return nextView;
+	}
+}
+```
+
+detail.jsp
+```html
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>Title</th>
+				<th>Writer</th>
+				<th>Content</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>${detail.id }</td>
+				<td>${detail.title }</td>
+				<td>${detail.writer }</td>
+				<td>${detail.content }</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
+```
