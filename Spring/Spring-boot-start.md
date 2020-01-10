@@ -642,3 +642,286 @@ detail.jsp
 </body>
 </html>
 ```
+
+### 3. Update
+#### BoardService.java
+```java
+package com.ms.study.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ms.study.domain.Board;
+import com.ms.study.repository.BoardRepository;
+
+@Service
+public class BoardService {
+
+	@Autowired
+	BoardRepository boardRepo;
+
+	public List<Board> findAll() {
+		List<Board> list = boardRepo.findAll();
+
+		return list;
+	}
+
+	public void create(Board board) {
+		boardRepo.save(board);
+	}
+
+	public Board detail(int id) {
+		Board detail = boardRepo.getOne(id);
+
+		return detail;
+	}
+
+	public void update(Board board) {
+
+		boardRepo.save(board);
+	}
+}
+```
+
+#### BoardController.java
+```java
+package com.ms.study.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ms.study.domain.Board;
+import com.ms.study.service.BoardService;
+
+@Controller
+public class BoardController {
+
+	@Autowired
+	BoardService service;
+
+	@GetMapping("/board")
+	public ModelAndView boardList() {
+
+		List<Board> list = service.findAll();
+		ModelAndView nextView = new ModelAndView("list");
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/create")
+	public ModelAndView boardCreate() {
+
+		ModelAndView nextView = new ModelAndView("create");
+
+		return nextView;
+	}
+
+	@PostMapping("/board/create")
+	public ModelAndView boardCreate(Board board) {
+
+		service.create(board);
+		ModelAndView nextView = new ModelAndView("list");
+		List<Board> list = service.findAll();
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/{id}")
+	public ModelAndView detail(@PathVariable("id") int id) {
+
+		ModelAndView nextView = new ModelAndView("detail");
+		Board detail = service.detail(id);
+		nextView.addObject("detail", detail);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/update/{id}")
+	public ModelAndView update(@PathVariable("id") int id) {
+
+		ModelAndView nextView = new ModelAndView("update");
+		Board origin = service.detail(id);
+		nextView.addObject("origin", origin);
+
+		return nextView;
+	}
+
+	@PostMapping("/board/update/{id}")
+	public String update(@PathVariable("id") int id, Board board) {
+
+		service.update(board);
+
+		return "redirect:/board";
+	}
+
+}
+```
+#### update.jsp
+```html
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/board/update/${origin.id}" method="POST">
+		<label>TITLE</label>
+		<input type="text" name="title" value="${origin.title}" /><br>
+		<label>WRITER</label>
+		<input type="text" name="writer" value="${origin.writer}" /><br>
+		<label>CONTENT</label>
+		<textarea name="content">${origin.content}</textarea><br>
+		<button type="submit">UPDATE</button>
+	</form>
+</body>
+</html>
+```
+
+### 4. Delete
+#### BoardService.java
+```java
+package com.ms.study.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ms.study.domain.Board;
+import com.ms.study.repository.BoardRepository;
+
+@Service
+public class BoardService {
+
+	@Autowired
+	BoardRepository boardRepo;
+
+	public List<Board> findAll() {
+		List<Board> list = boardRepo.findAll();
+
+		return list;
+	}
+
+	public void create(Board board) {
+		boardRepo.save(board);
+	}
+
+	public Board detail(int id) {
+		Board detail = boardRepo.getOne(id);
+
+		return detail;
+	}
+
+	public void update(Board board) {
+
+		boardRepo.save(board);
+	}
+
+	public void delete(int id) {
+		boardRepo.deleteById(id);
+	}
+}
+```
+
+#### BoardController.java
+```java
+package com.ms.study.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ms.study.domain.Board;
+import com.ms.study.service.BoardService;
+
+@Controller
+public class BoardController {
+
+	@Autowired
+	BoardService service;
+
+	@GetMapping("/board")
+	public ModelAndView boardList() {
+
+		List<Board> list = service.findAll();
+		ModelAndView nextView = new ModelAndView("list");
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/create")
+	public ModelAndView boardCreate() {
+
+		ModelAndView nextView = new ModelAndView("create");
+
+		return nextView;
+	}
+
+	@PostMapping("/board/create")
+	public ModelAndView boardCreate(Board board) {
+
+		service.create(board);
+		ModelAndView nextView = new ModelAndView("list");
+		List<Board> list = service.findAll();
+		nextView.addObject("boardList", list);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/{id}")
+	public ModelAndView detail(@PathVariable("id") int id) {
+
+		ModelAndView nextView = new ModelAndView("detail");
+		Board detail = service.detail(id);
+		nextView.addObject("detail", detail);
+
+		return nextView;
+	}
+
+	@GetMapping("/board/update/{id}")
+	public ModelAndView update(@PathVariable("id") int id) {
+
+		ModelAndView nextView = new ModelAndView("update");
+		Board origin = service.detail(id);
+		nextView.addObject("origin", origin);
+
+		return nextView;
+	}
+
+	@PostMapping("/board/update/{id}")
+	public String update(@PathVariable("id") int id, Board board) {
+
+		service.update(board);
+
+		return "redirect:/board";
+	}
+
+	@GetMapping("/board/delete/{id}")
+	public String delete(@PathVariable("id") int id) {
+
+		service.delete(id);
+
+		return "redirect:/board";
+	}
+}
+```
