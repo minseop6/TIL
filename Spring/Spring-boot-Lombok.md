@@ -80,3 +80,26 @@ public class Board {
 }
 
 ```
+
+## 자주 사용하는 어노테이션
+
+### @toString
+해당 메소드의 모든 필드를 출력하는 toString 메소드를 생성
+
+### @Getter / @Setter
+getter 함수와 setter 함수를 생성
+
+### @EqualsAndHashCode
+hashcode와 equals 메소드를 생성
+
+### @NoArgsConstructor
+파라미터를 요구하지 않는 생성자를 생성
+
+### @RequiredArgsConstructor
+파라미터를 요구하는 생성자 생성
+
+### @AllArgsConstructor
+모든 인자를 가진 생성자를 생성
+
+### @Data
+`@toString`, `@Getter`, `@Setter`, `@EqualsAndHashCode`, `@NoArgsConstructor`, `@RequiredArgsConstructor`, `@AllArgsConstructor` 를 모두 포함
