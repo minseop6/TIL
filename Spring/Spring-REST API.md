@@ -16,6 +16,18 @@ public HiddenHttpMethodFilter hiddenHttpMethodFilter(){
 ```html
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
+<!-- POST -->
+<form action="/board/post/${board.bno}" method="POST">
+    <input type="submit" value="삭제">
+</form>
+
+<!-- PUT -->
+<form action="/board/post/${board.bno}" method="POST">
+    <input type="hidden" name="_method" value="PUT"/>
+    <input type="submit" value="삭제">
+</form>
+
+<!-- DELETE -->
 <form action="/board/post/${board.bno}" method="POST">
     <input type="hidden" name="_method" value="DELETE"/>
     <input type="submit" value="삭제">
