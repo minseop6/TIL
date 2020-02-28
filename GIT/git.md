@@ -79,3 +79,41 @@ $ git rebase master
 $ git checkout master
 $ git cherry-pick <가져올 커밋 해쉬>
 ```
+
+## 변경사항 임시 저장
+#### Stash
+- 현재 작업 중인 변경사항들을 잠시 스택에 저장할 수 있는 기능
+- 마무리되지 않은 작업이 있을 때 다른 브랜치로 체크아웃해야하는 경우에 사용
+- stash에 이름 지정 가능
+- 이름을 지정하지 않을 경우 LIFO로 stash를 가져옴
+
+```git
+$ git stash # 현재 변경 사항들을 스택에 저장
+$ git stash list # stash 목록을 확인
+$ git stash apply # 가장 최근의 스태쉬를 다시 불러옴
+
+$ git stash <stash 이름> # stash에 이름을 지정해서 현재 변경사항들을 스택에 저장
+$ git stash apply <stash 이름> # <stash 이름>을 가진 stash를 불러옴
+```
+
+## 커밋 되돌리기
+#### Reset
+- 지정한 커밋의 상태로 돌아가는 기능
+- reset을 사용하면 지정한 커밋 이후의 히스토리는 모두 사라짐
+- 사용가능한 옵션
+  - hard : 삭제된 내용들은 사라짐
+  - soft : 삭제된 내용들은 스테이지로 이동
+  - mixed : 삭제된 내용들은 스테이지에 올라가지 않은 상태가 됨
+
+```git
+$ git reset <옵션> <커밋 이름>
+```
+
+#### Revert
+- 특정 커밋의 변경사항을 되돌리는 기능
+
+```git
+$ git revert <커밋 이름> # 특정 커밋을 되돌림
+$ git revert <커밋 이름>..<커밋 이름> # 커밋의 범위를 지정하여 되돌림
+$ git revert HEAD # 현재 헤드가 위치한 커밋을 되돌림
+```
