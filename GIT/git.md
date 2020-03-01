@@ -47,13 +47,41 @@
 - git checkout <브랜치> : 다른 브랜치로 체크아웃
 - git merge <브랜치> : 다른 브랜치를 현재 브랜치로 합치기
   - --squash : 브랜치의 이력을 다른 브랜치에 합치기
-- git cherry-pick <커밋명> : 하나의 커밋만 선택하여 합치기
+- git cherry-pick <commit hash> : 하나의 커밋만 선택하여 합치기
 - git branch -d <삭제할 브랜치> : 브랜치 삭제하기(삭제할 브랜치가 현재 브랜치에 합쳐졌을 경우)
 - git branch -d <삭제할 브랜치> : 브랜치 삭제하기(삭제할 브랜치가 현재 브랜치에 합쳐지지 않았을 경우)
 
 #### GIT 이력
+- git log : 모든 이력 조회
+  - -p : 변경사항을 보여주는 패치도 함께 조회
+  - -<number> : 최근 N개의 로그 조회
+  - --[since,after,until,before]=<날짜> : 특정 날짜 이전/이후 조회
+  - <시작지점>...<끝지점> : 두 지점 사이의 로그 조회
+
+- git diff : 현재 작업 트리와 인덱스의 차이점 비교
+  - <브랜치> <다른 브랜치> : 로컬 브랜치간 비교
+  - <브랜치> origin/<브랜치> : 로컬과 리모트 비교
+  - <commit hash> <commit hasg> : 커밋간 비교
+  - <현재 브랜치> <checkout remote branch> : pull request내용과 비교
+  - <commit hash> <checkout remote branch> : 커밋과 pull request 비교
+
 
 #### 원격 저장소
+- git clone <저장소> : 저장소 복제
+  - --depth<number> : 최근 N개의 커밋만 포함하여 저장소 복제
+- git remote add <원격 저장소> <저장소 url> : 새로운 원격 저장소 추가
+- git branch -r : 모든 원격 브랜치 목록 조회
+- git branch <새로운 브랜치> <원격 브랜치> : 원격 브랜치에서 지역 브랜치 생성
+- git branch <새로운 브랜치> <원격 태그> : 원격 태그에서 지역 브랜치 생성
+- git fetch : origin 저장소에서 합치지 않고 지역 브랜치로 변경사항 가져오기
+- git fetch <원격 저장소> : 원격 저장소에서 합치지 않고 지역 브랜치로 변경사항 가져오기
+- git pull : origin 저장소에서 변경사항을 가져와 현재 브랜치에 합치기
+- git pull <원격 저장소> : 원격 저장소에서 변경사항을 가져와 현재 브랜치에 합치기
+- git push <원격 저장소> <지역 브랜치>:<원격 브랜치> : 지역 브랜치를 원격 브랜치에 푸시
+- git push <원격 저장소> <지역 브랜치> : 지역 브랜치를 동일한 이름의 원격 브랜치에 푸시
+- git remote prune <원격 저장소> : 원격 브랜치 제거
+- git remote rm <원격 저장소> : 원격 저장소를 제거하고 관련된 브랜치 제거
+
 
 ## 두개의 브랜치 합치기
 #### Merge
@@ -126,14 +154,14 @@ $ git stash apply <stash 이름> # <stash 이름>을 가진 stash를 불러옴
   - mixed : 삭제된 내용들은 스테이지에 올라가지 않은 상태가 됨
 
 ```git
-$ git reset <옵션> <커밋명>
+$ git reset <옵션> <commit hash>
 ```
 
 #### Revert
 - 특정 커밋의 변경사항을 되돌리는 기능
 
 ```git
-$ git revert <커밋명> # 특정 커밋을 되돌림
-$ git revert <커밋명>..<커밋명> # 커밋의 범위를 지정하여 되돌림
+$ git revert <commit hash> # 특정 커밋을 되돌림
+$ git revert <commit hash>..<commit hash> # 커밋의 범위를 지정하여 되돌림
 $ git revert HEAD # 현재 헤드가 위치한 커밋을 되돌림
 ```
