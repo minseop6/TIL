@@ -58,8 +58,43 @@
 - `Collection`에 존재하는 `document` 수정
 - db.\<collection\>.updateOne() : 한 개의 `document`의 필드 수정
 - db.\<collection\>.updateMany() : 여러개의 `document`의 필드 수정
-- db.\<collection\>.replaceOne() : `document` 전체 수정
+- db.\<collection\>.replaceOne() : `document`의 `_id`필드를 제외하고 전체 수정
 
+#### Update Operators
+- $set : 필드값 수정
+- ex)
+
+```sql
+--MySQL
+UPDATE inventory
+SET size.uom='cm', status='P', lastModified=now()
+WHERE item='paper'
+
+--MongoDB
+db.inventory.updateOne(
+   { item: "paper" },
+   {
+     $set: { "size.uom": "cm", status: "P" },
+     $currentDate: { lastModified: true }
+   }
+)
+```
+
+#### Update Behavior
+- Atomicity
+  - MongoDB는 각각의 `document`에 대해 원자성을 지님
+- \_id Field
+  - `_id` 필드값을 업데이트 할 수 없음
+  - `document`를 `_id` 필드값이 다른 `document`로 `replace` 할 수 없음
+- Field Order
+  - 아래 두가지 예외를 제외하고 수정된 `document` 필드의 순서를 보존
+    - `_id` 필드는 항상 `document`의 첫 번째 필드
+    - 필드의 이름이 변경 될 경우 필드 순서가 변경 될 수 있음
+- Upsert Option
+  - Update 명령어를 실행했을 때 해당되는 `document`가 존재하지 않으면 새 `document` 삽입
+  - 해당하는 `document`가 존재하면 업데이트 명령 수행
+- Write Acknowledgement
+  - `request`에 대한 `response`를 어느 시점에 주느냐에 대한 동작 방식
 
 ## Delete
 - `Collection`에 존재하는 `document` 삭제
