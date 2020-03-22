@@ -100,3 +100,12 @@ db.inventory.updateOne(
 - `Collection`에 존재하는 `document` 삭제
 - db.\<collection\>.deleteOne() : 한 개의 `document` 삭제
 - db.\<collection\>.deleteMany() : 여러 개의 `document` 삭제
+  - deleteMany({}) : 모든 `document` 삭제
+
+#### Delete Behavior
+- Indexes
+  - Delete 연산은 `Collection`으로부터 모든 `document`를 삭제하더라도 `Indexes`는 삭제하지 않음
+- Atomicity
+  - MongoDB는 각각의 `document`에 대해 원자성을 지님
+- Write Acknowledgement
+  - `request`에 대한 `response`를 어느 시점에 주느냐에 대한 동작 방식
