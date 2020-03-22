@@ -4,9 +4,18 @@
 - getter/setter나 toString 등의 코드를 어노테이션으로 대체해서 선언
 - java코드를 컴파일 할 때 그에 맞는 코드를 생성해줌
 
+## Lombok 다운로드
+https://projectlombok.org/download
+
+1. lombok.jar 다운로드
+2. cmd에서 JDK설치 경로 이 (C:\Program Files\Java\jdk1.8.0_231\bin)
+3. lombok.jar 실행 (java -jar 설치경로\lombok.jar)
+4. 설치 진행
+
 ## Lombok 의존성 추가
-build.gradle
+#### Gradle
 ```java
+//build.gradle
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -18,13 +27,16 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 }
 ```
-## Lombok 다운로드
-https://projectlombok.org/download
 
-1. lombok.jar 다운로드
-2. cmd에서 JDK설치 경로 이 (C:\Program Files\Java\jdk1.8.0_231\bin)
-3. lombok.jar 실행 (java -jar 설치경로\lombok.jar)
-4. 설치 진행
+#### Maven
+```xml
+<!-- pom.xml -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.16.16</version>
+</dependency>
+```
 
 ## Lombok 적용
 VO 또는 Domain에 적용
