@@ -27,3 +27,17 @@
 - [Spring Ajax](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-Ajax)
 - [Spring File Upload](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-File-Upload.md)
 - [Spring Boot Tutorial](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-boot-start.md)
+
+## WEB
+- [Design Pattern](https://github.com/sksdk34/TIL/blob/master/WEB/Design-Pattern.md)
+- [HTTP](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP.md)
+- [Http Status Code](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP-Status-Code.md)
+- [NoSQL](https://github.com/sksdk34/TIL/blob/master/WEB/NoSQL.md)
+- [ORM](https://github.com/sksdk34/TIL/blob/master/WEB/ORM.md)
+- [Redis](https://github.com/sksdk34/TIL/blob/master/WEB/Redis.md)
+- [RESTful API](https://github.com/sksdk34/TIL/blob/master/WEB/RESTful%20API.md)
+- [Session](https://github.com/sksdk34/TIL/blob/master/WEB/Session.md)
+- [Transcation](https://github.com/sksdk34/TIL/blob/master/WEB/Transaction.md)
+- [URI](https://github.com/sksdk34/TIL/blob/master/WEB/URI.md)
+- [Web Architecture](https://github.com/sksdk34/TIL/blob/master/WEB/Web-Architecture.md)
+- [Web Socket](https://github.com/sksdk34/TIL/blob/master/WEB/WebSocket.md)
