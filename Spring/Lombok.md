@@ -95,7 +95,7 @@ public class Board {
 
 ## 자주 사용하는 어노테이션
 
-### @toString
+### @ToString
 해당 메소드의 모든 필드를 출력하는 toString 메소드를 생성
 
 ### @Getter / @Setter
