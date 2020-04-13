@@ -14,11 +14,49 @@
 1. Constructor Injection
   - `생성자`를 통한 주입
   - `<constructor-arg ref="object"></constructor-arg>`
+  - ex)
+
+```java
+@Controller
+public class exampleController{
+
+  private ExampleVo = exampleVo;
+
+  public ExampleVo(ExampleVo exampleVo){
+    this.exampleVo = exampleVo;
+  }
+}
+```
+
 2. Method(Setter) Injection
   - `setter()`를 통한 주입
   - `<property name="objectName" value="object1"></property>`
+  - ex)
+
+  ```java
+  @Controller
+  public class exampleController{
+
+    private ExampleVo = exampleVo;
+
+    public void setExampleVo(ExampleVo exampleVo){
+      this.exampleVo = exampleVo;
+    }
+  }
+  ```
+
 3. Field Injection
   - 멤버 변수를 통한 주입
+  - ex)
+
+  ```java
+  @Controller
+  public class exampleController{
+
+    @Autowired
+    private ExampleVo = exampleVo;
+  }
+  ```
 
 #### DI의 장점
 - Reduced Dependencies
