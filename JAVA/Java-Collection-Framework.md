@@ -41,3 +41,34 @@ public class Example {
 - `ArrayList`와 메서드는 동일하지만 내부 구조는 다름
 - `ArrayList`는 내부 배열 객체를 저장해서 인덱스를 관리하지만 `LinkedList`는 양방향 포인터 구조로 인접하는 참조를 링크해서 체인처럼 관리
 - 사용방법 동일
+
+### Set 인터페이스
+- 데이터의 저장 순서를 유지하지 않음
+- 같은 데이터의 중복저장을 허용하지 않음(null도 하나만 허용)
+- 인덱스로 객체에 접근할 수 없음
+- 반복자(Iterator)를 이용해서 객체에 접근
+
+#### 1. HashSet
+- 순서가 필요없는 데이터를 hash table에 저장
+- Set중에 가장 성능이 좋음
+```java
+public class Example {
+    	HashSet<String> ex = new HashSet<String>();
+	    ex.add("a");
+	    ex.add("b");
+	    ex.add("c");
+	    ex.add("a");
+	    
+	    Iterator it = ex.iterator();
+	    while(it.hasNext()) {
+	    	System.out.print(it.next() + " "); // result: a b c
+	    }
+}
+```
+#### 2. TreeSet
+- 저장된 데이터의 값에 따라 정렬됨
+- HashSet보다 성능이 느림
+
+#### 3. LinkedHashSet
+- 연결된 목록 타입으로 구현된 hash table에 데이터 저장
+- 저장된 순서에 따라 값이 정렬되나 가장 느림
