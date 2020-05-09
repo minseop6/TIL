@@ -45,6 +45,7 @@
 - [URI](https://github.com/sksdk34/TIL/blob/master/WEB/URI.md)
 - [Web Architecture](https://github.com/sksdk34/TIL/blob/master/WEB/Web-Architecture.md)
 - [Web Socket](https://github.com/sksdk34/TIL/blob/master/WEB/WebSocket.md)
+- [WS and WAS](https://github.com/sksdk34/TIL/blob/master/WEB/WS-and-WAS.md)
 
 ## JavaScript
 - [Arruow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
