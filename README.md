@@ -36,6 +36,7 @@
 - [Design Pattern](https://github.com/sksdk34/TIL/blob/master/WEB/Design-Pattern.md)
 - [HTTP](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP.md)
 - [Http Status Code](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP-Status-Code.md)
+- [CORS](https://github.com/sksdk34/TIL/blob/master/WEB/CORS.md)
 - [NoSQL](https://github.com/sksdk34/TIL/blob/master/WEB/NoSQL.md)
 - [ORM](https://github.com/sksdk34/TIL/blob/master/WEB/ORM.md)
 - [Redis](https://github.com/sksdk34/TIL/blob/master/WEB/Redis.md)
