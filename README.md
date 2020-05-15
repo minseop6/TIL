@@ -23,7 +23,7 @@
 - [JPA Hibernate DB Reset](https://github.com/sksdk34/TIL/blob/master/Spring/JPA-Hibernate-DB-Reset.md)
 - [JPA Join Entity](https://github.com/sksdk34/TIL/blob/master/Spring/JPA-Join-Entity.md)
 - [JPA Repository Method](https://github.com/sksdk34/TIL/blob/master/Spring/JpaRepository-method.md)
-- [Difference between Jar and War](https://github.com/sksdk34/TIL/blob/master/Spring/Difference-between-JAR-and-WAR.md)
+- [Jar and War](https://github.com/sksdk34/TIL/blob/master/Spring/Difference-between-JAR-and-WAR.md)
 - [JSTL](https://github.com/sksdk34/TIL/blob/master/Spring/JSTL.md)
 - [Lombok](https://github.com/sksdk34/TIL/blob/master/Spring/Lombok.md)
 - [Jackson](https://github.com/sksdk34/TIL/blob/master/Spring/Jackson.md)
