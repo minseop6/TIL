@@ -75,6 +75,9 @@
 ## Django
 - [Django Web-Socket](https://github.com/sksdk34/TIL/blob/master/Django/Django-WebSocket.md)
 
+## Algorithm
+- [Erathosthenes Sieve](https://github.com/sksdk34/TIL/blob/master/Algorithm/Eratosthenes-Sieve.md)
+
 ## GIT
 - [git](https://github.com/sksdk34/TIL/blob/master/GIT/git.md)
 
