@@ -48,15 +48,14 @@
 - [WS and WAS](https://github.com/sksdk34/TIL/blob/master/WEB/WS-and-WAS.md)
 
 ## Database
-- [Transcation](https://github.com/sksdk34/TIL/blob/master/WEB/Transaction.md)
-- [ORM](https://github.com/sksdk34/TIL/blob/master/WEB/ORM.md)
-- [NoSQL](https://github.com/sksdk34/TIL/blob/master/WEB/NoSQL.md)
-- [Redis](https://github.com/sksdk34/TIL/blob/master/WEB/Redis.md)
+- [Transcation](https://github.com/sksdk34/TIL/blob/master/Database/Transaction.md)
+- [ORM](https://github.com/sksdk34/TIL/blob/master/Database/ORM.md)
+- [NoSQL](https://github.com/sksdk34/TIL/blob/master/Database/NoSQL.md)
+- [Redis](https://github.com/sksdk34/TIL/blob/master/Database/Redis.md)
 - ### MySQL
-    - [MySQL DateType](https://github.com/sksdk34/TIL/blob/master/MySQL/MySQL-DateType.md)
-
+    - [MySQL DateType](https://github.com/sksdk34/TIL/blob/master/Database/MySQL/MySQL-DateType.md)
 - ### MongoDB
-    - [Commands](https://github.com/sksdk34/TIL/blob/master/MongoDB/Commands.md)
+    - [Commands](https://github.com/sksdk34/TIL/tree/master/Database/MongoDB)
 ## JavaScript
 - [Arruow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
 - [var-let-cont](https://github.com/sksdk34/TIL/blob/master/javascript/var-let-const.md)
