@@ -12,21 +12,16 @@
 int num = 10;
 boolean[] arr = new boolean[num + 1];
 
-for(int i=2; i<=num; i++) {
-	arr[i] = true;
-}
-arr[0] = arr[1] = false;
-
 for(int i=2; i*i<=num; i++){
-    if(arr[i]) {
+    if(!arr[i]) {
     	for(int j=i*i; j<=num; j+=i) {
-    		arr[j] = false;
+    		arr[j] = true;
     	}
     }
 }
-		
-for(int i=1; i<=num; i++) {
-	if(arr[i]) {
+				
+for(int i=2; i<=num; i++) {
+	if(!arr[i]) {
 		System.out.println(i);
 	}
 }
