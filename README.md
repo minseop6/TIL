@@ -57,7 +57,7 @@
 - ### MongoDB
     - [Commands](https://github.com/sksdk34/TIL/tree/master/Database/MongoDB)
 ## JavaScript
-- [Arruow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
+- [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
 - [var-let-cont](https://github.com/sksdk34/TIL/blob/master/javascript/var-let-const.md)
 - [Local Storage](https://github.com/sksdk34/TIL/blob/master/javascript/local-storage.md)
 - [Dynamically generated tag event](https://github.com/sksdk34/TIL/blob/master/javascript/Dynamically-generated-tag-event.md)
