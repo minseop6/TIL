@@ -3,8 +3,6 @@
 ## JAVA
 - [Overloading and Overriding](https://github.com/sksdk34/TIL/blob/master/JAVA/Overloading-and-Overriding.md)
 - [JAVA Features](https://github.com/sksdk34/TIL/blob/master/JAVA/JAVA-Features.md)
-- [OOP](https://github.com/sksdk34/TIL/blob/master/JAVA/OOP.md)
-- [SOLID](https://github.com/sksdk34/TIL/blob/master/JAVA/SOLID.md)
 - [Generic](https://github.com/sksdk34/TIL/blob/master/JAVA/Generic.md)
 - [Lambda Expression](https://github.com/sksdk34/TIL/blob/master/JAVA/Lambda-Expression.md)
 - [Stream](https://github.com/sksdk34/TIL/blob/master/JAVA/Stream.md)
@@ -38,7 +36,6 @@
 - [Spring Boot Tutorial](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-boot-start.md)
 
 ## WEB
-- [Design Pattern](https://github.com/sksdk34/TIL/blob/master/WEB/Design-Pattern.md)
 - [HTTP](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP.md)
 - [Http Status Code](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP-Status-Code.md)
 - [CORS](https://github.com/sksdk34/TIL/blob/master/WEB/CORS.md)
@@ -58,6 +55,12 @@
     - [MySQL DateType](https://github.com/sksdk34/TIL/blob/master/Database/MySQL/MySQL-DateType.md)
 - ### MongoDB
     - [Commands](https://github.com/sksdk34/TIL/tree/master/Database/MongoDB)
+
+## Software Engineering
+- [OOP](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/OOP.md)
+- [SOLID](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/SOLID.md)
+- [Design Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Design-Pattern.md)
+
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
 - [var-let-cont](https://github.com/sksdk34/TIL/blob/master/javascript/var-let-const.md)
