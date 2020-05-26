@@ -60,6 +60,7 @@
 - [OOP](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/OOP.md)
 - [SOLID](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/SOLID.md)
 - [Design Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Design-Pattern.md)
+- [Strategy Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Strategy-Pattern.md)
 
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
