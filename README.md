@@ -31,7 +31,7 @@
 - [Jackson](https://github.com/sksdk34/TIL/blob/master/Spring/Jackson.md)
 - [Receive a list from Form Tag](https://github.com/sksdk34/TIL/blob/master/Spring/Receive%20a%20list%20from%20Form-Tag.md)
 - [Send value on redirect](https://github.com/sksdk34/TIL/blob/master/Spring/Send%20value%20on%20redirect.md)
-- [Spring Ajax](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-Ajax)
+- [Spring Ajax](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-Ajax.md)
 - [Spring File Upload](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-File-Upload.md)
 - [Spring Boot Tutorial](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-boot-start.md)
 
@@ -61,6 +61,7 @@
 - [SOLID](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/SOLID.md)
 - [Design Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Design-Pattern.md)
 - [Strategy Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Strategy-Pattern.md)
+- [Singleton Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Singleton-Pattern.md)
 
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
