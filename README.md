@@ -68,6 +68,7 @@
 - [Singleton Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Singleton-Pattern.md)
 - [State Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/State-Pattern.md)
 - [Command Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Command-Pattern.md)
+- [Observer Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Observer-Pattern.md)
 
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
