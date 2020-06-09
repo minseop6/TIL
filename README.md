@@ -71,6 +71,7 @@
 - [Observer Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Observer-Pattern.md)
 - [Decorator Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Decorator-Pattern.md)
 - [Template Method Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Template-Method-Pattern.md)
+- [Factory Method Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Factory-Method-Pattern.md)
 
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
