@@ -50,6 +50,7 @@
 - [CI CD](https://github.com/sksdk34/TIL/blob/master/WEB/CI-CD.md)
 - [Jenkins](https://github.com/sksdk34/TIL/blob/master/WEB/Jenkins.md)
 - [Function and Method](https://github.com/sksdk34/TIL/blob/master/WEB/Function-Method.md)
+- [XML](https://github.com/sksdk34/TIL/blob/master/WEB/XML.md)
 
 ## Database
 - [Transcation](https://github.com/sksdk34/TIL/blob/master/Database/Transaction.md)
