@@ -61,6 +61,7 @@
     - [MySQL DateType](https://github.com/sksdk34/TIL/blob/master/Database/MySQL/MySQL-DateType.md)
 - ### MongoDB
     - [Commands](https://github.com/sksdk34/TIL/tree/master/Database/MongoDB)
+    - [Replica Set](https://github.com/sksdk34/TIL/blob/master/Database/MongoDB/Replica-Set.md)
 
 ## Software Engineering
 - [OOP](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/OOP.md)
