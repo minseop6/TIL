@@ -77,6 +77,9 @@
 - [Factory Method Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Factory-Method-Pattern.md)
 - [Abstract Factory Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Abstact-Factory-Pattern.md)
 
+## OS
+- [Operating System](https://github.com/sksdk34/TIL/blob/master/OS/Operating-System.md)
+
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
 - [var-let-const](https://github.com/sksdk34/TIL/blob/master/javascript/var-let-const.md)
