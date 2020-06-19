@@ -80,6 +80,7 @@
 ## OS
 - [Operating System](https://github.com/sksdk34/TIL/blob/master/OS/Operating-System.md)
 - [Process & Thread](https://github.com/sksdk34/TIL/blob/master/OS/Process-Thread.md)
+- [Scheduler](https://github.com/sksdk34/TIL/blob/master/OS/Scheduler.md)
 
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
