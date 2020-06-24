@@ -77,6 +77,7 @@
 - [Template Method Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Template-Method-Pattern.md)
 - [Factory Method Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Factory-Method-Pattern.md)
 - [Abstract Factory Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Abstact-Factory-Pattern.md)
+- [Composite Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Composite-Pattern.md)
 - [TDD](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/TDD.md)
 
 ## OS
