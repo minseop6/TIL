@@ -88,6 +88,7 @@
 - [Process & Thread](https://github.com/sksdk34/TIL/blob/master/OS/Process-Thread.md)
 - [Scheduler](https://github.com/sksdk34/TIL/blob/master/OS/Scheduler.md)
 - [DeadLock](https://github.com/sksdk34/TIL/blob/master/OS/DeadLock.md)
+- [Semarphore and Mutex](https://github.com/sksdk34/TIL/blob/master/OS/Semaphore-Mutex.md)
 
 ## Network
 - [OSI 7Layer](https://github.com/sksdk34/TIL/blob/master/Network/OSI-7layer.md)
