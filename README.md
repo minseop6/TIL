@@ -57,6 +57,7 @@
 ## Database
 - [Transcation](https://github.com/sksdk34/TIL/blob/master/Database/Transaction.md)
 - [Noramalization](https://github.com/sksdk34/TIL/blob/master/Database/Normalization.md)
+- [Index](https://github.com/sksdk34/TIL/blob/master/Database/Index.md)
 - [ORM](https://github.com/sksdk34/TIL/blob/master/Database/ORM.md)
 - [NoSQL](https://github.com/sksdk34/TIL/blob/master/Database/NoSQL.md)
 - [Redis](https://github.com/sksdk34/TIL/blob/master/Database/Redis.md)
