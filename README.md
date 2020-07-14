@@ -56,7 +56,8 @@
 
 ## Database
 - [Transcation](https://github.com/sksdk34/TIL/blob/master/Database/Transaction.md)
-- [Noramalization](https://github.com/sksdk34/TIL/blob/master/Database/Normalization.md)
+- [Normalization](https://github.com/sksdk34/TIL/blob/master/Database/Normalization.md)
+- [Denormalization](https://github.com/sksdk34/TIL/blob/master/Database/Denormalization.md)
 - [Data Model](https://github.com/sksdk34/TIL/blob/master/Database/DataModel.md)
 - [Index](https://github.com/sksdk34/TIL/blob/master/Database/Index.md)
 - [ORM](https://github.com/sksdk34/TIL/blob/master/Database/ORM.md)
