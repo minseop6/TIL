@@ -60,6 +60,7 @@
 - [Denormalization](https://github.com/sksdk34/TIL/blob/master/Database/Denormalization.md)
 - [Data Model](https://github.com/sksdk34/TIL/blob/master/Database/DataModel.md)
 - [Index](https://github.com/sksdk34/TIL/blob/master/Database/Index.md)
+- [View](https://github.com/sksdk34/TIL/blob/master/Database/View.md)
 - [ORM](https://github.com/sksdk34/TIL/blob/master/Database/ORM.md)
 - [NoSQL](https://github.com/sksdk34/TIL/blob/master/Database/NoSQL.md)
 - [Redis](https://github.com/sksdk34/TIL/blob/master/Database/Redis.md)
