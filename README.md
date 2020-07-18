@@ -109,6 +109,7 @@
 
 ## TypeScript
 - [TypeScript](https://github.com/sksdk34/TIL/blob/master/TypeScript/TypeScript.md)
+- [Variable](https://github.com/sksdk34/TIL/blob/master/TypeScript/Variable.md)
 
 ## NodeJS
 - [React Interlocking](https://github.com/sksdk34/TIL/blob/master/Node/React-interlocking.md)
