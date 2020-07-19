@@ -62,6 +62,7 @@
 - [Index](https://github.com/sksdk34/TIL/blob/master/Database/Index.md)
 - [View](https://github.com/sksdk34/TIL/blob/master/Database/View.md)
 - [Cluster](https://github.com/sksdk34/TIL/blob/master/Database/Cluster.md)
+- [Partition](https://github.com/sksdk34/TIL/blob/master/Database/Partition.md)
 - [ORM](https://github.com/sksdk34/TIL/blob/master/Database/ORM.md)
 - [NoSQL](https://github.com/sksdk34/TIL/blob/master/Database/NoSQL.md)
 - [Redis](https://github.com/sksdk34/TIL/blob/master/Database/Redis.md)
