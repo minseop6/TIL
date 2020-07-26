@@ -88,6 +88,7 @@
 - [Abstract Factory Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Abstact-Factory-Pattern.md)
 - [Composite Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Composite-Pattern.md)
 - [UML](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/UML.md)
+- [Module](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Module.md)
 - [TDD](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/TDD.md)
 
 ## OS
