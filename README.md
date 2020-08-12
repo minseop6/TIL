@@ -106,6 +106,7 @@
 
 ## Data Structure
 - [Stack and Queue](https://github.com/sksdk34/TIL/blob/master/Data%20Structure/stack-queue.md)
+- [Graph and Tree](https://github.com/sksdk34/TIL/blob/master/Data%20Structure/Graph-Tree.md)
 
 ## JavaScript
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
