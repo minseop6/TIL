@@ -116,10 +116,9 @@
 - [Local Storage](https://github.com/sksdk34/TIL/blob/master/javascript/local-storage.md)
 - [Dynamically generated tag event](https://github.com/sksdk34/TIL/blob/master/javascript/Dynamically-generated-tag-event.md)
 - [Refresh Part of Page by JQuery](https://github.com/sksdk34/TIL/blob/master/javascript/Jquery-Refresh%20part%20of%20page.md)
-
-## TypeScript
-- [TypeScript](https://github.com/sksdk34/TIL/blob/master/TypeScript/TypeScript.md)
-- [Variable](https://github.com/sksdk34/TIL/blob/master/TypeScript/Variable.md)
+### TypeScript
+- [TypeScript](https://github.com/sksdk34/TIL/blob/master/javascript/TypeScript/TypeScript.md)
+- [Variable](https://github.com/sksdk34/TIL/blob/master/javascript/TypeScript/Variable.md)
 
 ## NodeJS
 - [React Interlocking](https://github.com/sksdk34/TIL/blob/master/Node/React-interlocking.md)
