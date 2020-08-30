@@ -73,6 +73,7 @@
 - [ORM](https://github.com/sksdk34/TIL/blob/master/Database/ORM.md)
 - [NoSQL](https://github.com/sksdk34/TIL/blob/master/Database/NoSQL.md)
 - [Redis](https://github.com/sksdk34/TIL/blob/master/Database/Redis.md)
+- [Data Visualization](https://github.com/Teddy-Seop/TIL/blob/master/Database/Data-Visualization.md)
 - ### MySQL
     - [MySQL DateType](https://github.com/sksdk34/TIL/blob/master/Database/MySQL/MySQL-DateType.md)
 - ### MongoDB
