@@ -45,6 +45,7 @@
 - [Cookie-Session](https://github.com/sksdk34/TIL/blob/master/WEB/Cookie-Session.md)
 - [URI](https://github.com/sksdk34/TIL/blob/master/WEB/URI.md)
 - [Web Architecture](https://github.com/sksdk34/TIL/blob/master/WEB/Web-Architecture.md)
+- [MSA](https://github.com/Teddy-Seop/TIL/blob/master/WEB/MSA.md)
 - [OAuth 2.0](https://github.com/Teddy-Seop/TIL/blob/master/WEB/OAuth2.0.md)
 - [JWT](https://github.com/Teddy-Seop/TIL/blob/master/WEB/JWT.md)
 - [Web Socket](https://github.com/sksdk34/TIL/blob/master/WEB/WebSocket.md)
