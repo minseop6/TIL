@@ -95,3 +95,37 @@
 ### API Gateway 적용시 고려할 사항
 - `Scale out` 적용이 유연하지 않으면 `API Gateway`에 병목현상이 발생해 애플리케이션의 성능저하가 발생할 수 있음
 - `API Gateway`라는 추가적인 `Layer`가 만들어지는 것이기 때문에 네트워크 `Latency`가 증가
+
+## Service Mesh
+- 마이크로 서비스 간의 네트워크를 담당
+- 통신 및 네트워크 기능을 비지니스 로직과 분리한 네트워크 통신 인프라
+- 모든 서비스의 인프라 레이어로서 서비스들 간의 통신을 처리하고 `Service Discovery`, 서비스 라우팅, `Failure Recovery`, `Load Balancing`, 보안 등의 문제를 처리할 수 있음
+
+### API Gateway와의 차이점
+||API Gateway|Service Mesh|
+|---|---|---|
+|라우팅 주체|서버|요청하는 서비스|
+|라우팅 구성 요소|별도의 네트워크롤 도입하는 독립적인 `API Gateway` 구성 요소|서비스 내 `Sidecar`로 `Local Network` 스택의 일부가 됨|
+|적용 위치|마이크로 서비스 그룹의 외부 경계에 위치하여 역할을 수행|경계 내부에서 역할을 수행|
+|아키텍쳐 형태|중앙 집중형 아키텍쳐여서 `SPOF(Single Point of Failure)`를 생성함|분산형 아키텍쳐이므로 `SPOF`를 생성하지 않고 확장이 용이|
+|패턴|- `Gateway Proxy Pattern`을 사용하여 수행<br>- `Consumer`는 구현 내용을 알 필요 없이 `Gateway`를 호출하는 방법만 알면됨|- `Sidecar Proxy Pattern`을 사용<br>- `Consumer`의 코드에는 `Provider`의 주소를 찾는법, `Failover`와 관련된 코드 등이 들어감|
+|로드밸런싱|- 단일 엔드포인트를 제공<br>- `API Gateway` 내 로드밸런싱을 담당하는 구성요소에 요청을 `redirect`하여 해당 구성요소가 처리|- `Service Registry`에서 서비스 목록을 수신<br>- `Sidecar`에서 로드밸런싱 알고리즘을 통해 수행|
+|네트워크|외부 인터넷과 내부 서비스 네트워크 사이에 위치|내부 서비스 네트워크 사이에 위치하며 응용 프로그램의 네트워크 경계 내에서만 통신을 가능하게함|
+|분석|API에 대한 사용자 및 공급자에 대한 모든 호출에 대해 수집되고 분석됨|`Mesh` 내 모든 마이크로서비스 구성요소에 대해 분석 가능
+
+### Service Mesh의 종류
+1. #### PaaS(Platform as a Service)의 일부로 서비스 코드에 포함되는 유형
+    - Microsoft Azure Service fabric, lagom, SENECA 등
+    - 프레임워크 기반의 프로그래밍 모델이기 때문에 `Service Mesh`를 구현하는데 특화된 코드가 필요(Mesh-native Code)
+2. #### 라이브러리로 구현되어 API 호출을 통해 Service Mesh에 결합되는 유형
+    - `Spring Cloud`, `Netflix`, `OSS` 등
+    - 프레임워크 라이브러리를 사용하는 형태로 `Service Mesh`를 이해하고 코드를 작성해야함(Mesh Aware Code)
+3. #### Side Car Proxy를 이용하여 Service Mesh를 마이크로 서비스에 주입하는 유형
+    - `Istio/Envoy`, `Consul`, `Linkerd` 등
+    -  `Sidecar Proxy`형태로 동작하여 `Service Mesh`와 무관하게 코드 작성
+
+### Sidecar Pattern이란?
+- 모든 응용프로그램 컨테이너에 추가로 `Sidecar` 컨테이너가 배포
+- `Sidecar`는 서비스에 들어오거나 나가는 모든 네트워크 트래픽을 처리
+- 비지니스 로직이 포함된 실제 서비스와 `Sidecar`가 병렬로 구성되어있기 때문에 서비스 호출에서 서비스가 직접 서비스를 호출하는 것이 아니라 `proxy`를 통해서 호출
+- 대규모 마이크로서비스 환경에서도 개발자가 별도의 작업 없이 서비스의 연결 뿐만 아니라 로깅, 모니터링, 보안, 트래픽 제어와 같은 다양한 이점을 누릴 수 있음
