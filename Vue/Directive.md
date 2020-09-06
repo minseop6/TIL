@@ -123,6 +123,8 @@ export default class About extends Vue {
 ```
 
 7. ### v-for
+
+```js
 <template>
   <div>
     <div>
@@ -152,8 +154,7 @@ export default class About extends Vue {
   ];
 }
 </script>
-
-<style></style>
+```
 
 8. ### v-on
 
