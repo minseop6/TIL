@@ -1,6 +1,7 @@
 # Today I Learned
 
 ## JAVA
+
 - [Overloading and Overriding](https://github.com/sksdk34/TIL/blob/master/JAVA/Overloading-and-Overriding.md)
 - [JAVA Features](https://github.com/sksdk34/TIL/blob/master/JAVA/JAVA-Features.md)
 - [Generic](https://github.com/sksdk34/TIL/blob/master/JAVA/Generic.md)
@@ -13,6 +14,7 @@
 - [List in a loop](https://github.com/sksdk34/TIL/blob/master/JAVA/List%20in%20a%20loop.md)
 
 ## Spring
+
 - [Dependency Injection](https://github.com/sksdk34/TIL/blob/master/Spring/Dependency-Injection.md)
 - [AOP](https://github.com/sksdk34/TIL/blob/master/Spring/AOP.md)
 - [Spring Annotation](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-Annotation.md)
@@ -37,6 +39,7 @@
 - [Spring Boot Tutorial](https://github.com/sksdk34/TIL/blob/master/Spring/Spring-boot-start.md)
 
 ## WEB
+
 - [HTTP](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP.md)
 - [HTTPS](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP-HTTPS.md)
 - [Http Status Code](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP-Status-Code.md)
@@ -63,6 +66,7 @@
 - [XML](https://github.com/sksdk34/TIL/blob/master/WEB/XML.md)
 
 ## Database
+
 - [Transcation](https://github.com/sksdk34/TIL/blob/master/Database/Transaction.md)
 - [Normalization](https://github.com/sksdk34/TIL/blob/master/Database/Normalization.md)
 - [Denormalization](https://github.com/sksdk34/TIL/blob/master/Database/Denormalization.md)
@@ -76,13 +80,14 @@
 - [Redis](https://github.com/sksdk34/TIL/blob/master/Database/Redis.md)
 - [Data Visualization](https://github.com/Teddy-Seop/TIL/blob/master/Database/Data-Visualization.md)
 - ### MySQL
-    - [MySQL DateType](https://github.com/sksdk34/TIL/blob/master/Database/MySQL/MySQL-DateType.md)
+  - [MySQL DateType](https://github.com/sksdk34/TIL/blob/master/Database/MySQL/MySQL-DateType.md)
 - ### MongoDB
-    - [MongoDB](https://github.com/sksdk34/TIL/blob/master/Database/MongoDB/MongoDB.md)
-    - [Commands](https://github.com/sksdk34/TIL/tree/master/Database/MongoDB)
-    - [Replica Set](https://github.com/sksdk34/TIL/blob/master/Database/MongoDB/Replica-Set.md)
+  - [MongoDB](https://github.com/sksdk34/TIL/blob/master/Database/MongoDB/MongoDB.md)
+  - [Commands](https://github.com/sksdk34/TIL/tree/master/Database/MongoDB)
+  - [Replica Set](https://github.com/sksdk34/TIL/blob/master/Database/MongoDB/Replica-Set.md)
 
 ## Software Engineering
+
 - [OOP](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/OOP.md)
 - [SOLID](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/SOLID.md)
 - [Design Pattern](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/Design-Pattern.md)
@@ -101,6 +106,7 @@
 - [TDD](https://github.com/sksdk34/TIL/blob/master/SW%20Engineering/TDD.md)
 
 ## OS
+
 - [Operating System](https://github.com/sksdk34/TIL/blob/master/OS/Operating-System.md)
 - [Process & Thread](https://github.com/sksdk34/TIL/blob/master/OS/Process-Thread.md)
 - [Scheduler](https://github.com/sksdk34/TIL/blob/master/OS/Scheduler.md)
@@ -108,16 +114,19 @@
 - [Semarphore and Mutex](https://github.com/sksdk34/TIL/blob/master/OS/Semaphore-Mutex.md)
 
 ## Network
+
 - [OSI 7Layer](https://github.com/sksdk34/TIL/blob/master/Network/OSI-7layer.md)
 - [Protocol](https://github.com/sksdk34/TIL/blob/master/Network/Protocol.md)
 - [TCP-IP](https://github.com/sksdk34/TIL/blob/master/Network/TCP-IP.md)
 - [TCP-UDP](https://github.com/Teddy-Seop/TIL/blob/master/Network/TCP-UDP.md)
 
 ## Data Structure
+
 - [Stack and Queue](https://github.com/sksdk34/TIL/blob/master/Data%20Structure/stack-queue.md)
 - [Graph and Tree](https://github.com/sksdk34/TIL/blob/master/Data%20Structure/Graph-Tree.md)
 
 ## JavaScript
+
 - [Arrow Function](https://github.com/sksdk34/TIL/blob/master/javascript/ArrowFunction.md)
 - [var-let-const](https://github.com/sksdk34/TIL/blob/master/javascript/var-let-const.md)
 - [Async/Await](https://github.com/sksdk34/TIL/blob/master/javascript/async-await.md)
@@ -126,11 +135,14 @@
 - [Local Storage](https://github.com/sksdk34/TIL/blob/master/javascript/local-storage.md)
 - [Dynamically generated tag event](https://github.com/sksdk34/TIL/blob/master/javascript/Dynamically-generated-tag-event.md)
 - [Refresh Part of Page by JQuery](https://github.com/sksdk34/TIL/blob/master/javascript/Jquery-Refresh%20part%20of%20page.md)
+
 ### TypeScript
+
 - [TypeScript](https://github.com/sksdk34/TIL/blob/master/javascript/TypeScript/TypeScript.md)
 - [Variable](https://github.com/sksdk34/TIL/blob/master/javascript/TypeScript/Variable.md)
 
 ## NodeJS
+
 - [Node.js](https://github.com/sksdk34/TIL/blob/master/NodeJS/NodeJS.md)
 - [Middleware](https://github.com/sksdk34/TIL/blob/master/NodeJS/middleware.md)
 - [Passport.js](https://github.com/sksdk34/TIL/blob/master/NodeJS/Passort.md)
@@ -139,22 +151,31 @@
 - [Socket-io](https://github.com/sksdk34/TIL/blob/master/Node/Socket-io.md)
 - [Multer](https://github.com/sksdk34/TIL/blob/master/NodeJS/Multer.md)
 
+## Vue
+
+- [Directive](https://github.com/Teddy-Seop/TIL/blob/master/Vue/Directive.md)
+
 ## React
+
 - [Component](https://github.com/sksdk34/TIL/blob/master/React/component.md)
 - [Component Life Cycle](https://github.com/sksdk34/TIL/blob/master/React/Component-Life%20Cycle.md)
 - [jsx](https://github.com/sksdk34/TIL/blob/master/React/jsx.md)
 
 ## Django
+
 - [Django](https://github.com/sksdk34/TIL/blob/master/Django/Django.md)
 - [Django Web-Socket](https://github.com/sksdk34/TIL/blob/master/Django/Django-WebSocket.md)
 
 ## Algorithm
+
 - [BFS-DFS](https://github.com/sksdk34/TIL/blob/master/Algorithm/BFS-DFS.md)
 - [Erathosthenes Sieve](https://github.com/sksdk34/TIL/blob/master/Algorithm/Eratosthenes-Sieve.md)
 
 ## GIT
+
 - [git](https://github.com/sksdk34/TIL/blob/master/GIT/git.md)
 
 ## Docker
+
 - [Docker](https://github.com/sksdk34/TIL/blob/master/Docker/Docker.md)
 - [Commands](https://github.com/sksdk34/TIL/blob/master/Docker/Docker-Commands.md)
