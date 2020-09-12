@@ -166,6 +166,7 @@ export default class About extends Vue {
     <div>
       <div>{{ message }}</div>
       <button v-on:click="reverseMessage">Message Reverse</button>
+      <button @click="reverseMessage">Message Reverse</button>
     </div>
   </div>
 </template>
