@@ -158,6 +158,7 @@
 - [Vue CLI](https://github.com/Teddy-Seop/TIL/blob/master/Vue/VueCLI.md)
 - [Directive](https://github.com/Teddy-Seop/TIL/blob/master/Vue/Directive.md)
 - [Class-Component](https://github.com/Teddy-Seop/TIL/blob/master/Vue/class-component.md)
+- [Property-Decorator](https://github.com/Teddy-Seop/TIL/blob/master/Vue/property-decorator.md)
 
 ## React
 
