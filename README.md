@@ -45,6 +45,7 @@
 - [Http Status Code](https://github.com/sksdk34/TIL/blob/master/WEB/HTTP-Status-Code.md)
 - [CORS](https://github.com/sksdk34/TIL/blob/master/WEB/CORS.md)
 - [RESTful API](https://github.com/sksdk34/TIL/blob/master/WEB/RESTful%20API.md)
+- [GraphQL](https://github.com/Teddy-Seop/TIL/blob/master/WEB/GraphQL.md)
 - [Cookie-Session](https://github.com/sksdk34/TIL/blob/master/WEB/Cookie-Session.md)
 - [URI](https://github.com/sksdk34/TIL/blob/master/WEB/URI.md)
 - [Web Architecture](https://github.com/sksdk34/TIL/blob/master/WEB/Web-Architecture.md)
