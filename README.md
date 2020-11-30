@@ -148,7 +148,6 @@
 ## NodeJS
 
 - [Node.js](https://github.com/sksdk34/TIL/blob/master/NodeJS/NodeJS.md)
-- [NestJS DataLoader](https://github.com/Teddy-Seop/TIL/blob/master/NodeJS/NestJS-DataLoader.md)
 - [Middleware](https://github.com/sksdk34/TIL/blob/master/NodeJS/middleware.md)
 - [Passport.js](https://github.com/sksdk34/TIL/blob/master/NodeJS/Passort.md)
 - [Jest](https://github.com/Teddy-Seop/TIL/blob/master/NodeJS/Jest.md)
@@ -157,6 +156,9 @@
 - [Socket-io](https://github.com/sksdk34/TIL/blob/master/Node/Socket-io.md)
 - [Multer](https://github.com/sksdk34/TIL/blob/master/NodeJS/Multer.md)
 
+## NestJS
+- [Circular Dependency](https://github.com/Teddy-Seop/TIL/blob/master/NestJS/circular-dependency.md)
+- [DataLoader](https://github.com/Teddy-Seop/TIL/blob/master/NestJS/DataLoader.md)
 ## Vue
 
 - [Vue CLI](https://github.com/Teddy-Seop/TIL/blob/master/Vue/VueCLI.md)
