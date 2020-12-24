@@ -138,6 +138,7 @@
 - [Webpack](https://github.com/sksdk34/TIL/blob/master/javascript/Webpack.md)
 - [Loop](https://github.com/sksdk34/TIL/blob/master/javascript/foreach-forof-forin.md)
 - [Local Storage](https://github.com/sksdk34/TIL/blob/master/javascript/local-storage.md)
+- [Accessor Property](https://github.com/Teddy-Seop/TIL/blob/master/javascript/accessor-property.md)
 - [Dynamically generated tag event](https://github.com/sksdk34/TIL/blob/master/javascript/Dynamically-generated-tag-event.md)
 - [Refresh Part of Page by JQuery](https://github.com/sksdk34/TIL/blob/master/javascript/Jquery-Refresh%20part%20of%20page.md)
 
