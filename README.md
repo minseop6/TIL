@@ -145,6 +145,7 @@
 ### TypeScript
 
 - [TypeScript](https://github.com/sksdk34/TIL/blob/master/javascript/TypeScript/TypeScript.md)
+- [Tsconfig](https://github.com/Teddy-Seop/TIL/blob/master/javascript/TypeScript/tsconfig.md)
 - [Variable](https://github.com/sksdk34/TIL/blob/master/javascript/TypeScript/Variable.md)
 
 ## NodeJS
