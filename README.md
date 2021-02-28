@@ -162,6 +162,7 @@
 ## NestJS
 - [Circular Dependency](https://github.com/Teddy-Seop/TIL/blob/master/NestJS/circular-dependency.md)
 - [DataLoader](https://github.com/Teddy-Seop/TIL/blob/master/NestJS/DataLoader.md)
+- [Mapped Types](https://github.com/Teddy-Seop/TIL/blob/master/NestJS/mapped-types.md)
 ## Vue
 
 - [Vuex](https://github.com/Teddy-Seop/TIL/blob/master/Vue/vuex.md)
