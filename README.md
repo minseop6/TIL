@@ -54,7 +54,7 @@
 - [JWT](https://github.com/Teddy-Seop/TIL/blob/master/WEB/JWT.md)
 - [Web Socket](https://github.com/sksdk34/TIL/blob/master/WEB/WebSocket.md)
 - [WS and WAS](https://github.com/sksdk34/TIL/blob/master/WEB/WS-and-WAS.md)
-- [Nginx] (https://github.com/Teddy-Seop/TIL/blob/master/WEB/Nginx.md)
+- [Nginx](https://github.com/Teddy-Seop/TIL/blob/master/WEB/Nginx.md)
 - [SSR and CSR](https://github.com/sksdk34/TIL/blob/master/WEB/SSR-CSR.md)
 - [Functional Programming](https://github.com/sksdk34/TIL/blob/master/WEB/FunctionalProgramming.md)
 - [Elasticsearch](https://github.com/Teddy-Seop/TIL/blob/master/WEB/Elasticsearch.md)
