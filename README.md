@@ -169,6 +169,7 @@
 ## Vue
 
 - [Vuex](https://github.com/Teddy-Seop/TIL/blob/master/Vue/vuex.md)
+- [Life Cycle](https://github.com/Teddy-Seop/TIL/blob/master/Vue/life-cycle.md)
 - [Vue CLI](https://github.com/Teddy-Seop/TIL/blob/master/Vue/VueCLI.md)
 - [Directive](https://github.com/Teddy-Seop/TIL/blob/master/Vue/Directive.md)
 - [Class-Component](https://github.com/Teddy-Seop/TIL/blob/master/Vue/class-component.md)

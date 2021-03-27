@@ -1,6 +1,6 @@
 # Vue Life Cycle
 
-<img src="../img/Vue/vue-lifecycle.png" width="600">
+<img src="../img/Vue/vue-lifecycle.png" width="600" height="1000">
 
 ## beforeCreate
 - Vue 인스턴스가 초기화 된 직후에 실행
