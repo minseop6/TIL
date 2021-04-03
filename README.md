@@ -137,6 +137,7 @@
 - [Class-Component](https://github.com/Teddy-Seop/TIL/blob/master/Vue/class-component.md)
 - [Property-Decorator](https://github.com/Teddy-Seop/TIL/blob/master/Vue/property-decorator.md)
 - [Global API](https://github.com/Teddy-Seop/TIL/blob/master/Vue/global-api.md)
+- [Mixin](https://github.com/Teddy-Seop/TIL/blob/master/Vue/mixin.md)
 - [Apollo-fetch-policy](https://github.com/Teddy-Seop/TIL/blob/master/Vue/apollo-fetch-policy.md)
 - [Apollo-Fragments](https://github.com/Teddy-Seop/TIL/blob/master/Vue/apollo-fragments.md)
 
