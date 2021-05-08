@@ -147,6 +147,7 @@
 - [Component](https://github.com/sksdk34/TIL/blob/master/React/component.md)
 - [Component Life Cycle](https://github.com/sksdk34/TIL/blob/master/React/Component-Life%20Cycle.md)
 - [jsx](https://github.com/sksdk34/TIL/blob/master/React/jsx.md)
+- [useEffect](https://github.com/Teddy-Seop/TIL/blob/master/React/use-effect.md)
 
 ## JAVA
 
