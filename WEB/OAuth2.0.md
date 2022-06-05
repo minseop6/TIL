@@ -7,7 +7,6 @@
 - 다른 서비스의 회원 정보를 안전하게 사용하기 위한 방법
 
 ## 개념
------------
 1. ### Authentication
   - 인증, 접근 자격이 있는지 검증
 2. ### Authorization
@@ -19,7 +18,6 @@
   - Access Token 만료 시간을 갱신하기 위한 토큰
 
 ## 역할
-------------
 1. ### Resource Owner
   - 사용자로 사람 또는 어플리케이션이 될 수 있음
 2. ### Client Application
