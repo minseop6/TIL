@@ -30,11 +30,11 @@
 4. ### Resource Server
   - 사용자의 리소스를 제공하는 서버
 
-
 ## 인증 과정
-```plantuml
+![IMG](../img/WEB/OAuth2.0/OAuth.png)
+
+<!-- ```plantuml
 @startuml
-  skinparam backgroundColor white
   ResourceOwner -> ClientApplication : 서비스 접근, 로그인 요청
   ClientApplication -> AuthorizationServer : 로그인 요청
   AuthorizationServer -> ClientApplication : Access Token 발급
@@ -44,5 +44,4 @@
   ResourceServer -> ClientApplication : resource 반환
   ClientApplication -> ResourceOwner : resource 반환
 @enduml
-
-```
+``` -->
